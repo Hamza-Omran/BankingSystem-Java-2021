@@ -1,5 +1,8 @@
 # BankProject (First-Year Java Project - Archived)
 
+## Academic Context
+This project was developed as part of the "Programming II" course (2024).
+
 ## Test Credentials (Example User)
 
 To quickly test the application without creating a new account, you can use this pre-configured user:
