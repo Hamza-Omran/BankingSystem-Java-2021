@@ -1,4 +1,3 @@
-````md
 # BankProject (First-Year Java Project - Archived)
 
 ## Test Credentials (Example User)
@@ -107,5 +106,3 @@ My recent repositories represent my current professional level.
 This repository is archived and will not receive updates.
 It exists solely for historical and educational reference.
 
-```
-```
