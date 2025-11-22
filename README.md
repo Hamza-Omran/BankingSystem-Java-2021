@@ -1,4 +1,42 @@
+````md
 # BankProject (First-Year Java Project - Archived)
+
+## Test Credentials (Example User)
+
+To quickly test the application without creating a new account, you can use this pre-configured user:
+
+- **User ID:** `220110`  
+- **Password:** `hamza12345`
+
+## How to Run the Program (Ubuntu / Linux)
+
+### Option 1 — Run via Terminal (Recommended)
+
+1. Install Java if not already installed:
+   ```bash
+   sudo apt install default-jre
+````
+
+2. Navigate to the folder containing the JAR file:
+
+   ```bash
+   cd "/path/to/your/jar/folder"
+   ```
+3. Run the application:
+
+   ```bash
+   java -jar "Programming Project.jar"
+   ```
+
+### Direct JAR Download Link
+
+You can download the JAR file here:
+
+```
+https://github.com/Hamza-Omran/BankingSystem-Java-2021/raw/master/Programming%20Project/out/artifacts/Programming_Project_jar/Programming%20Project.jar
+```
+
+---
 
 ## About This Repository
 
@@ -7,64 +45,67 @@ It is uploaded only for historical reference and does not reflect my current cod
 
 ## What the Project Does
 
-A simple Java Swing desktop app that simulates a basic bank system:
+A simple Java Swing desktop application that simulates a basic banking system. It allows users to:
 
-- Create new client accounts
-- Log in with username/password
-- View balance, certificates, loans, deposits
-- Navigate through multiple GUI pages
+* Create new client accounts
+* Log in using a generated user ID and password
+* View account balance, certificates, deposits, and loans
+* Navigate through multiple GUI pages
 
-The project uses:
+Technologies and concepts used:
 
-- Java Swing for GUI
-- Simple in-memory data storage (no database)
-- Basic OOP concepts and event-driven programming
+* Java Swing for GUI
+* In-memory data storage (no database)
+* Basic object-oriented programming
+* Event-driven programming
 
 ## Important Notice
 
-This code was written in Year 1 and kept exactly as is:
+This code was written during my first year and has been kept unchanged for historical purposes:
 
-- No architecture (spaghetti-style code)
-- Hardcoded values and UI layout
-- No separation of concerns
-- No database (data resets every run)
-- Minimal validation and basic logic
-- Not representative of my current skill level
+* No architectural structure
+* Hardcoded values and manually positioned UI elements
+* No separation of concerns
+* No database; all data resets on application restart
+* Minimal validation and basic logic
+* Not representative of my current skill level or development practices
 
-I am keeping it for transparency and as part of my learning journey.
+I am keeping it publicly available to document my learning progression.
 
 ## Why Upload It?
 
-- To preserve early work and show growth
-- To document where I started
-- To keep an archive of my first GUI project
-- To contrast with the structured projects I write today
+* To preserve early work and show growth over time
+* To document how my development skills evolved
+* To archive my first GUI-based project
+* To contrast with my later structured and professional projects
 
 ## My Current Skills (Compared to Year 1)
 
-Since building this, I have gained experience in:
+Since creating this project, I have gained significant experience in:
 
-- C# & .NET Desktop development
-- Clean architecture, layering, modularization
-- REST APIs & full backend systems
-- SQL databases & indexing
-- Authentication, validation & security best practices
-- Professional error handling
-- Scalable, maintainable code structures
-- Full-stack development practices
+* C# and .NET desktop application development
+* Clean architecture, layered systems, and modular design
+* REST API development and backend engineering
+* SQL databases, indexing, and relational schema design
+* Input validation, authentication, and secure coding practices
+* Scalable and maintainable code organization
+* Full-stack development principles
 
-My modern repositories reflect my actual level today.
+My recent repositories represent my current professional level.
 
 ## Tech Used (Historical)
 
-- Java SE
-- Java Swing
-- NetBeans / IntelliJ IDEA
-- No external libraries
-- No database
-- Basic collections (ArrayList)
+* Java SE
+* Java Swing
+* NetBeans / IntelliJ IDEA
+* No external libraries
+* No database
+* Basic Java collections (ArrayList)
 
 ## Project Status
 
-Archived - no future updates.
-This repository is kept solely for historical and educational purposes.
+This repository is archived and will not receive updates.
+It exists solely for historical and educational reference.
+
+```
+```
