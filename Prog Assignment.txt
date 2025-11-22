@@ -1,0 +1,220 @@
+ public static void main(String[] args) {
+       
+        Person pqw=new Person("ali", "cairo",998979875,"ali189@gmail.com");   
+             Employee eerty=new Employee("412", 7000,"2010","windows", "alex", 66812345, "windows134@gmail.com");
+                  Student saas=new Student("freshman", "mmmm", "alex",676823456, "mmmm1782@gmail.com");
+                     Faculty fqazxs=new Faculty("4:30", "manager", "292", 11000, "2019", "ibrahim", "alex",123540104, "ibrahim978@gmail.com");
+                           Staff st=new Staff("lecturer","860", 5000, "2017", "goooglename", "alex", 875467, "goooogle@gmail.com");
+                                 System.out.println(pqw.toString());
+                                      System.out.println(saas.toString());
+                                            System.out.println(eerty.toString());
+                                                    System.out.println(fqazxs.toString());
+                                                          System.out.println(st.toString());
+        
+        
+        }
+    }
+    
+
+class Person {
+    private String name;
+    private String address;
+    private int phonenumber;
+    private String emailaddress;
+
+     Person() {
+    }
+
+   Person(String name, String address, int phonenumber, String emailaddress) {
+        this.name = name;
+        this.address = address;
+        this.phonenumber = phonenumber;
+        this.emailaddress = emailaddress;
+    }
+
+    String getName() {
+        return name;
+    }
+
+    String getAddress() {
+        return address;
+    }
+
+  int getPhonenumber() {
+        return phonenumber;
+    }
+
+     String getEmailaddress() {
+        return emailaddress;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setPhonenumber(int phonenumber) {
+        this.phonenumber = phonenumber;
+    }
+
+    public void setEmailaddress(String emailaddress) {
+        this.emailaddress = emailaddress;
+    }
+    @Override
+    public String toString()
+    {
+    return "person {name "+name+" address "+address+" phone number "+phonenumber+" email address "+emailaddress+'}';
+    }
+}
+class Student extends Person {
+    private String status;
+
+ 
+    public Student() {
+    }
+    public Student(String status) {
+        this.status = status;
+    }
+
+    
+
+    public Student(String aqs ,String name, String address, int phonenumber, String emailaddress) {
+        super(name, address, phonenumber, emailaddress);
+        status=aqs;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+    @Override
+    public String toString()
+    {
+        
+    return super.toString()+"student {status "+status+'}';
+    }
+}
+class Employee extends Person{
+    private String office;
+    private int salary;
+    private String datehired;
+
+     Employee() {
+    }
+
+     Employee(String office, int salary, String datehired) {
+        this.office = office;
+        this.salary = salary;
+        this.datehired = datehired;
+    }
+
+    Employee(String office, int salary, String datehired, String name, String address, int phonenumber, String emailaddress) {
+        super(name, address, phonenumber, emailaddress);
+        this.office = office;
+        this.salary = salary;
+        this.datehired = datehired;
+    }
+
+     String getOffice() {
+        return office;
+    }
+
+    double getSalary() {
+        return salary;
+    }
+
+   String getDatehired() {
+        return datehired;
+    }
+
+     void setOffice(String office) {
+        this.office = office;
+    }
+
+     void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+     void setDatehired(String datehired) {
+        this.datehired = datehired;
+    }
+    
+    public String toString()
+    {
+        
+    return super.toString()+"employee {office "+office+" salary "+salary+" date hired "+datehired+'}';
+    }
+    
+}
+class Faculty extends Employee{
+     private String office_hours;
+      private String rank;
+
+    Faculty() {
+    }
+
+     Faculty(String office_hours, String rank) {
+        this.office_hours = office_hours;
+        this.rank = rank;
+    }
+
+     Faculty(String office_hours, String rank, String office, int salary, String datehired, String name, String address, int phonenumber, String emailaddress) {
+        super(office, salary, datehired, name, address, phonenumber, emailaddress);
+        this.office_hours = office_hours;
+        this.rank = rank;
+    }
+
+    String getOffice_hours() {
+        return office_hours;
+    }
+
+    String getRank() {
+        return rank;
+    }
+
+     void setOffice_hours(String office_hours) {
+        this.office_hours = office_hours;
+    }
+
+    void setRank(String rank) {
+        this.rank = rank;
+    }
+      
+    public String toString()
+    {
+        
+    return super.toString()+"Faculty {office hours "+office_hours+" rank "+rank+'}';
+    }
+}
+class Staff extends Employee{
+     private String title;
+
+    Staff() {
+        
+    }
+
+    Staff(String title, String office, int salary, String datehired, String name, String address, int phonenumber, String emailaddress) {
+        super(office, salary, datehired, name, address, phonenumber, emailaddress);
+        this.title = title;
+    }
+
+    String getTitle() {
+        return title;
+    }
+
+     void setTitle(String title) {
+        this.title = title;
+    }
+    
+     public String toString()
+     {
+     return super.toString()+"staff {title "+title+'}';
+     }
+}
+
